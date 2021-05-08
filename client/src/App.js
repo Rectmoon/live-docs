@@ -10,7 +10,7 @@ import Document from './Document'
 
 export default function App () {
   return (
-    <Router>
+    <Router basename='/hera'>
       <Switch>
         <Route path='/' exact>
           <Redirect to={`/document/${uuidV4()}`} />
